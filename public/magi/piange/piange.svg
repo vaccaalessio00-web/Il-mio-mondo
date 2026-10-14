@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Bathroom Gradient -->
+    <linearGradient id="bgGradP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#c7d2fe" />
+      <stop offset="50%" stopColor="#e0e7ff" />
+      <stop offset="100%" stopColor="#fce7f3" />
+    </linearGradient>
+
+    <pattern id="pastelTilesP" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#c7d2fe" stroke-width="1.2" opacity="0.6" />
+    </pattern>
+
+    <linearGradient id="skinP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fff1eb" />
+      <stop offset="100%" stopColor="#fed7aa" />
+    </linearGradient>
+
+    <linearGradient id="hairP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#78350f" />
+      <stop offset="100%" stopColor="#451a03" />
+    </linearGradient>
+
+    <linearGradient id="tubP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="70%" stopColor="#f1f5f9" />
+      <stop offset="100%" stopColor="#cbd5e1" />
+    </linearGradient>
+
+    <linearGradient id="tearsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#38bdf8" />
+      <stop offset="50%" stopColor="#0284c7" />
+      <stop offset="100%" stopColor="#0369a1" />
+    </linearGradient>
+
+    <radialGradient id="bubbleP" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="60%" stopColor="#e0f2fe" />
+      <stop offset="100%" stopColor="#bae6fd" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="600" height="600" fill="url(#bgGradP)" />
+  <rect width="600" height="420" fill="url(#pastelTilesP)" />
+
+  <!-- Window with rainy drops outside -->
+  <rect x="50" y="40" width="110" height="130" rx="55" fill="#93c5fd" stroke="#ffffff" stroke-width="6" />
+  <circle cx="90" cy="110" r="4" fill="#ffffff" opacity="0.7" />
+  <circle cx="110" cy="130" r="3" fill="#ffffff" opacity="0.7" />
+  <circle cx="80" cy="140" r="3.5" fill="#ffffff" opacity="0.7" />
+
+  <!-- 2. Bathtub Shadow on floor -->
+  <ellipse cx="300" cy="520" rx="230" ry="40" fill="#94a3b8" opacity="0.6" />
+
+  <!-- 3. Bathtub Back Wall Rim -->
+  <ellipse cx="300" cy="380" rx="210" ry="85" fill="#cbd5e1" />
+  <!-- Water surface full of ripples from tears -->
+  <ellipse cx="300" cy="385" rx="195" ry="75" fill="#38bdf8" opacity="0.85" />
+
+  <!-- 4. MAGI SITTING IN TUB CRYING COMICALLY -->
+  <!-- Hair Back -->
+  <ellipse cx="300" cy="220" rx="100" ry="110" fill="url(#hairP)" />
+  <path d="M210 230 C200 300, 230 350, 250 370 C240 330, 230 290, 235 240 Z" fill="url(#hairP)" />
+  <path d="M390 230 C400 300, 370 350, 350 370 C360 330, 370 290, 365 240 Z" fill="url(#hairP)" />
+
+  <!-- Shoulders & Upper Body -->
+  <ellipse cx="300" cy="335" rx="72" ry="50" fill="url(#skinP)" />
+  <path d="M245 330 C235 370, 260 410, 300 410 C340 410, 365 370, 355 330 Z" fill="url(#skinP)" />
+  <rect x="286" y="260" width="28" height="32" rx="12" fill="url(#skinP)" />
+
+  <!-- Swimsuit / Top -->
+  <path d="M255 350 Q300 365 345 350 L345 390 Q300 405 255 390 Z" fill="#fda4af" stroke="#f43f5e" stroke-width="2.5" />
+  <path d="M280 320 L275 350" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+  <path d="M320 320 L325 350" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Head -->
+  <ellipse cx="300" cy="210" rx="72" ry="68" fill="url(#skinP)" />
+
+  <!-- Ears -->
+  <ellipse cx="228" cy="215" rx="10" ry="14" fill="url(#skinP)" />
+  <ellipse cx="372" cy="215" rx="10" ry="14" fill="url(#skinP)" />
+
+  <!-- Hair Front Bangs -->
+  <path d="M230 200 C240 140, 360 140, 370 200 C350 180, 330 185, 300 195 C270 185, 250 180, 230 200 Z" fill="url(#hairP)" />
+  <g transform="translate(360, 160)">
+    <circle cx="0" cy="0" r="14" fill="#f43f5e" />
+    <circle cx="0" cy="0" r="7" fill="#fef08a" />
+  </g>
+
+  <!-- Sad angled Eyebrows (Dramatic Chibi Sadness) -->
+  <path d="M255 190 Q270 198 285 195" stroke="#451a03" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M345 190 Q330 198 315 195" stroke="#451a03" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Cute anime closed crying eyes (streams of tears) -->
+  <path d="M258 214 Q270 206 282 214" stroke="#3b2014" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M318 214 Q330 206 342 214" stroke="#3b2014" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Blushing cheeks in distress -->
+  <ellipse cx="252" cy="225" rx="12" ry="7" fill="#fb7185" opacity="0.8" />
+  <ellipse cx="348" cy="225" rx="12" ry="7" fill="#fb7185" opacity="0.8" />
+
+  <!-- WATERFALL TEAR FOUNTAINS (Iconic Anime Waterfall Tears) -->
+  <!-- Left Waterfall Tear Stream -->
+  <path d="M260 216 C250 250, 240 310, 230 380 L250 380 C258 310, 268 250, 276 216 Z" fill="url(#tearsGrad)" opacity="0.85" />
+  <!-- Left Splash on tub rim -->
+  <ellipse cx="240" cy="380" rx="14" ry="6" fill="#7dd3fc" />
+  <circle cx="230" cy="370" r="4" fill="#38bdf8" />
+  <circle cx="248" cy="365" r="3.5" fill="#38bdf8" />
+
+  <!-- Right Waterfall Tear Stream -->
+  <path d="M340 216 C350 250, 360 310, 370 380 L350 380 C342 310, 332 250, 324 216 Z" fill="url(#tearsGrad)" opacity="0.85" />
+  <!-- Right Splash on tub rim -->
+  <ellipse cx="360" cy="380" rx="14" ry="6" fill="#7dd3fc" />
+  <circle cx="370" cy="370" r="4" fill="#38bdf8" />
+  <circle cx="352" cy="365" r="3.5" fill="#38bdf8" />
+
+  <!-- Trembling Open Sad Chibi Mouth: "WAAAAA / UFFA!" -->
+  <ellipse cx="300" cy="240" rx="12" ry="10" fill="#be123c" stroke="#9f1239" stroke-width="2" />
+  <path d="M292 245 Q300 240 308 245" fill="#f43f5e" />
+
+  <!-- Forearms holding hands to cheeks/eyes -->
+  <ellipse cx="230" cy="360" rx="28" ry="16" fill="url(#skinP)" transform="rotate(35 230 360)" />
+  <ellipse cx="370" cy="360" rx="28" ry="16" fill="url(#skinP)" transform="rotate(-35 370 360)" />
+
+  <!-- 5. Bathtub Front Body (Porcelain Tub) -->
+  <path d="M90 380 C90 490, 160 520, 300 520 C440 520, 510 490, 510 380 C510 370, 480 350, 300 350 C120 350, 90 370, 90 380 Z" fill="url(#tubP)" stroke="#cbd5e1" stroke-width="3" />
+  <ellipse cx="300" cy="375" rx="208" ry="24" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.9" />
+
+  <!-- Tub Feet (Gold Clawfoot) -->
+  <path d="M150 490 L140 525 Q135 535 155 535 L165 520 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2" />
+  <path d="M450 490 L460 525 Q465 535 445 535 L435 520 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2" />
+
+  <!-- Rubber duck with tear drop -->
+  <g transform="translate(140, 335)">
+    <ellipse cx="25" cy="25" rx="18" ry="14" fill="#facc15" stroke="#ca8a04" stroke-width="1.5" />
+    <circle cx="15" cy="15" r="10" fill="#facc15" stroke="#ca8a04" stroke-width="1.5" />
+    <path d="M6 15 Q0 17 6 19 Z" fill="#f97316" stroke="#c2410c" stroke-width="1" />
+    <circle cx="13" cy="13" r="2" fill="#000000" />
+    <circle cx="12" cy="12" r="0.8" fill="#ffffff" />
+    <!-- Teardrop on duck -->
+    <path d="M15 18 C13 21, 17 21, 15 18 Z" fill="#38bdf8" />
+  </g>
+
+  <!-- Big Speech / Dramatic Banner on Top -->
+  <g transform="translate(300, 75)">
+    <rect x="-140" y="-22" width="280" height="44" rx="22" fill="#ffffff" stroke="#38bdf8" stroke-width="3" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Quicksand', sans-serif" font-weight="900" font-size="16" fill="#0369a1">😭 "Uffa, i miei tatuaggi!"</text>
+  </g>
+</svg>

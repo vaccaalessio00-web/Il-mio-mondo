@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Mezzaluna e stellina magica -->
+  <path d="M50 15 A35 35 0 1 0 75 75 A32 32 0 1 1 50 15 Z" fill="#6366f1" />
+  <!-- Stellina brillio -->
+  <path d="M68 28 L72 38 L82 40 L74 47 L77 57 L68 51 L59 57 L62 47 L54 40 L64 38 Z" fill="#fbbf24" />
+  <circle cx="34" cy="52" r="3" fill="#ffffff" opacity="0.8" />
+  <circle cx="44" cy="65" r="2" fill="#ffffff" opacity="0.8" />
+</svg>

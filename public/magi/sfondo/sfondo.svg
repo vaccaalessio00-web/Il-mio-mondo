@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Bathroom Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#dbeafe" />
+      <stop offset="40%" stopColor="#eff6ff" />
+      <stop offset="100%" stopColor="#fdf2f8" />
+    </linearGradient>
+
+    <!-- Wall Tiles Pattern -->
+    <pattern id="pastelTiles" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#e0e7ff" stroke-width="1.2" opacity="0.6" />
+    </pattern>
+
+    <!-- Skin Gradient -->
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#fff1eb" />
+      <stop offset="100%" stopColor="#fed7aa" />
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#78350f" />
+      <stop offset="100%" stopColor="#451a03" />
+    </linearGradient>
+
+    <!-- Bathtub Porcelain Gradient -->
+    <linearGradient id="tub" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="70%" stopColor="#f1f5f9" />
+      <stop offset="100%" stopColor="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Warm Water Gradient -->
+    <linearGradient id="water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#7dd3fc" stop-opacity="0.85" />
+      <stop offset="100%" stopColor="#38bdf8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Bubble Shading -->
+    <radialGradient id="bubble" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="60%" stopColor="#e0f2fe" />
+      <stop offset="100%" stopColor="#bae6fd" />
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Wall Background & Soft Tiles -->
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+  <rect width="600" height="420" fill="url(#pastelTiles)" />
+
+  <!-- Window with soft clouds in top left -->
+  <rect x="50" y="40" width="110" height="130" rx="55" fill="#bae6fd" stroke="#ffffff" stroke-width="6" />
+  <ellipse cx="90" cy="120" rx="30" ry="18" fill="#ffffff" opacity="0.8" />
+  <ellipse cx="120" cy="115" rx="25" ry="15" fill="#ffffff" opacity="0.8" />
+
+  <!-- Shelf on right with shampoo bottle & plant -->
+  <rect x="440" y="140" width="120" height="10" rx="5" fill="#cbd5e1" />
+  <!-- Plant pot -->
+  <path d="M510 140 L515 115 L545 115 L550 140 Z" fill="#fbcfe8" stroke="#f472b6" stroke-width="2" />
+  <ellipse cx="530" cy="108" rx="14" ry="8" fill="#86efac" />
+  <ellipse cx="538" cy="102" rx="10" ry="6" fill="#4ade80" />
+  <!-- Cute Lotion bottle -->
+  <rect x="460" y="105" width="22" height="35" rx="6" fill="#fde047" stroke="#eab308" stroke-width="2" />
+  <rect x="467" y="96" width="8" height="9" fill="#94a3b8" />
+  <rect x="463" y="93" width="16" height="4" rx="2" fill="#94a3b8" />
+
+  <!-- 2. Bathtub Shadow on floor -->
+  <ellipse cx="300" cy="520" rx="230" ry="40" fill="#cbd5e1" opacity="0.6" />
+
+  <!-- 3. Bathtub Back Wall Rim -->
+  <ellipse cx="300" cy="380" rx="210" ry="85" fill="#e2e8f0" />
+  <!-- Water surface -->
+  <ellipse cx="300" cy="385" rx="195" ry="75" fill="url(#water)" />
+
+  <!-- 4. MAGI CHARACTER SITTING IN TUB -->
+  <!-- Hair Back -->
+  <ellipse cx="300" cy="220" rx="100" ry="110" fill="url(#hair)" />
+  <path d="M210 230 C200 300, 230 350, 250 370 C240 330, 230 290, 235 240 Z" fill="url(#hair)" />
+  <path d="M390 230 C400 300, 370 350, 350 370 C360 330, 370 290, 365 240 Z" fill="url(#hair)" />
+
+  <!-- Shoulders & Upper Body -->
+  <ellipse cx="300" cy="335" rx="72" ry="50" fill="url(#skin)" />
+  <path d="M245 330 C235 370, 260 410, 300 410 C340 410, 365 370, 355 330 Z" fill="url(#skin)" />
+
+  <!-- Neck -->
+  <rect x="286" y="260" width="28" height="32" rx="12" fill="url(#skin)" />
+
+  <!-- Cute Swimsuit / Towel Top -->
+  <path d="M255 350 Q300 365 345 350 L345 390 Q300 405 255 390 Z" fill="#fda4af" stroke="#f43f5e" stroke-width="2.5" />
+  <path d="M280 320 L275 350" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+  <path d="M320 320 L325 350" stroke="#f43f5e" stroke-width="3" stroke-linecap="round" />
+  <!-- Cute daisy bow on top -->
+  <circle cx="300" cy="358" r="6" fill="#fef08a" />
+  <circle cx="295" cy="358" r="4" fill="#ffffff" />
+  <circle cx="305" cy="358" r="4" fill="#ffffff" />
+
+  <!-- Head -->
+  <ellipse cx="300" cy="210" rx="72" ry="68" fill="url(#skin)" />
+
+  <!-- Ears -->
+  <ellipse cx="228" cy="215" rx="10" ry="14" fill="url(#skin)" />
+  <ellipse cx="372" cy="215" rx="10" ry="14" fill="url(#skin)" />
+
+  <!-- Hair Front Bangs & Curls -->
+  <path d="M230 200 C240 140, 360 140, 370 200 C350 180, 330 185, 300 195 C270 185, 250 180, 230 200 Z" fill="url(#hair)" />
+  <path d="M245 190 Q270 220 285 200" fill="url(#hair)" />
+  <path d="M355 190 Q330 220 315 200" fill="url(#hair)" />
+  <!-- Hair Bun / Flower Accessory -->
+  <g transform="translate(360, 160)">
+    <circle cx="0" cy="0" r="14" fill="#f43f5e" />
+    <circle cx="0" cy="0" r="7" fill="#fef08a" />
+  </g>
+
+  <!-- Big Chibi Sparkling Eyes (Happy & Cheerful) -->
+  <!-- Left Eye -->
+  <ellipse cx="270" cy="212" rx="12" ry="16" fill="#3b2014" />
+  <circle cx="266" cy="207" r="5" fill="#ffffff" />
+  <circle cx="274" cy="218" r="2.5" fill="#ffffff" />
+  <!-- Right Eye -->
+  <ellipse cx="330" cy="212" rx="12" ry="16" fill="#3b2014" />
+  <circle cx="326" cy="207" r="5" fill="#ffffff" />
+  <circle cx="334" cy="218" r="2.5" fill="#ffffff" />
+
+  <!-- Eyebrows -->
+  <path d="M260 192 Q270 188 280 192" stroke="#451a03" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M320 192 Q330 188 340 192" stroke="#451a03" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Blushing Cheeks -->
+  <ellipse cx="254" cy="225" rx="11" ry="6" fill="#fb7185" opacity="0.6" />
+  <ellipse cx="346" cy="225" rx="11" ry="6" fill="#fb7185" opacity="0.6" />
+
+  <!-- Happy Smile -->
+  <path d="M292 232 Q300 242 308 232" stroke="#be123c" stroke-width="2.8" stroke-linecap="round" fill="#fda4af" />
+
+  <!-- Forearms resting cheerfully on bathtub rim -->
+  <ellipse cx="215" cy="385" rx="35" ry="16" fill="url(#skin)" transform="rotate(-15 215 385)" />
+  <ellipse cx="385" cy="385" rx="35" ry="16" fill="url(#skin)" transform="rotate(15 385 385)" />
+
+  <!-- 5. Bathtub Front Body (Porcelain Tub) -->
+  <path d="M90 380 C90 490, 160 520, 300 520 C440 520, 510 490, 510 380 C510 370, 480 350, 300 350 C120 350, 90 370, 90 380 Z" fill="url(#tub)" stroke="#cbd5e1" stroke-width="3" />
+  <!-- Tub Rim Highlight -->
+  <ellipse cx="300" cy="375" rx="208" ry="24" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.9" />
+
+  <!-- Tub Feet (Gold Clawfoot) -->
+  <path d="M150 490 L140 525 Q135 535 155 535 L165 520 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2" />
+  <path d="M450 490 L460 525 Q465 535 445 535 L435 520 Z" fill="#facc15" stroke="#ca8a04" stroke-width="2" />
+
+  <!-- 6. Playful Floating Soap Bubbles & Suds -->
+  <!-- Foam clusters along the tub edge -->
+  <circle cx="160" cy="370" r="16" fill="url(#bubble)" />
+  <circle cx="180" cy="365" r="22" fill="url(#bubble)" />
+  <circle cx="205" cy="372" r="18" fill="url(#bubble)" />
+  <circle cx="225" cy="378" r="14" fill="url(#bubble)" />
+
+  <circle cx="370" cy="378" r="15" fill="url(#bubble)" />
+  <circle cx="395" cy="368" r="20" fill="url(#bubble)" />
+  <circle cx="420" cy="372" r="22" fill="url(#bubble)" />
+  <circle cx="445" cy="375" r="16" fill="url(#bubble)" />
+
+  <!-- Cute Yellow Rubber Duckie on Tub Edge -->
+  <g transform="translate(140, 335)">
+    <!-- Body -->
+    <ellipse cx="25" cy="25" rx="18" ry="14" fill="#facc15" stroke="#ca8a04" stroke-width="1.5" />
+    <circle cx="15" cy="15" r="10" fill="#facc15" stroke="#ca8a04" stroke-width="1.5" />
+    <!-- Beak -->
+    <path d="M6 15 Q0 17 6 19 Z" fill="#f97316" stroke="#c2410c" stroke-width="1" />
+    <!-- Eye -->
+    <circle cx="13" cy="13" r="2" fill="#000000" />
+    <circle cx="12" cy="12" r="0.8" fill="#ffffff" />
+    <!-- Wing -->
+    <path d="M22 23 Q28 18 34 23 Q28 27 22 23 Z" fill="#eab308" />
+  </g>
+
+  <!-- Floating Soap Bubbles in the Air -->
+  <g>
+    <circle cx="120" cy="260" r="14" fill="url(#bubble)" opacity="0.85" />
+    <circle cx="116" cy="256" r="4" fill="#ffffff" opacity="0.9" />
+
+    <circle cx="470" cy="280" r="18" fill="url(#bubble)" opacity="0.85" />
+    <circle cx="465" cy="275" r="5" fill="#ffffff" opacity="0.9" />
+
+    <circle cx="490" cy="220" r="12" fill="url(#bubble)" opacity="0.85" />
+    <circle cx="487" cy="217" r="3.5" fill="#ffffff" opacity="0.9" />
+
+    <circle cx="100" cy="190" r="10" fill="url(#bubble)" opacity="0.8" />
+    <circle cx="98" cy="188" r="3" fill="#ffffff" opacity="0.9" />
+  </g>
+</svg>
