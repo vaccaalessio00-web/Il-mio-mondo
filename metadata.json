@@ -1,0 +1,8 @@
+{
+  "name": "My world Final",
+  "description": "App mobile sul mio mondo. Gestisci schede, registra carichi e ripetizioni, catalogo completo di esercizi e tracciamento progressi con grafici, nonch\u0027è minigiochi e calmworld",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

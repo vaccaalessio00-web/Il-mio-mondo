@@ -1,0 +1,597 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0.75rem);
+  }
+}
+
+/* =========================================================================
+   DARK MODE HARMONIOUS THEME SYSTEM
+   Provides deep contrast, high legibility, and rich nocturnal aesthetics
+   while keeping Light Mode 100% intact.
+   ========================================================================= */
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #080c14;
+  color: #f8fafc;
+}
+
+/* Header & Bottom Navbar Nocturnal Glass */
+html.dark header,
+html.dark header.bg-white\/90 {
+  background-color: rgba(14, 22, 38, 0.94) !important;
+  border-color: #1e2d42 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.dark .fixed.bottom-0,
+html.dark .fixed.bottom-0.bg-white\/95 {
+  background-color: rgba(14, 22, 38, 0.96) !important;
+  border-color: #1e2d42 !important;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Card Surfaces & Elevated Panels */
+html.dark .bg-white {
+  background-color: #162236 !important;
+  border-color: #25364f !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+html.dark .bg-white\/90,
+html.dark .bg-white\/95 {
+  background-color: rgba(22, 34, 54, 0.95) !important;
+  border-color: #25364f !important;
+}
+
+/* Secondary & Nested Surfaces */
+html.dark .bg-\[\#fafdfb\],
+html.dark .bg-\[\#f4fcf7\] {
+  background-color: #121b2b !important;
+  border-color: #223249 !important;
+}
+
+html.dark .bg-slate-50,
+html.dark .bg-slate-100 {
+  background-color: #1a273b !important;
+  border-color: #283a54 !important;
+}
+
+/* =========================================================================
+   TEXT CONTRAST & LEGIBILITY FIXES
+   Never dark text on dark surfaces!
+   ========================================================================= */
+
+/* Headings and primary bold text */
+html.dark .text-slate-900,
+html.dark .text-slate-800,
+html.dark .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+/* Secondary body text */
+html.dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+/* Muted labels & captions */
+html.dark .text-slate-500,
+html.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Emerald / Mint Text -> Vibrant Aurora Mint & Teal */
+html.dark .text-emerald-950,
+html.dark .text-emerald-900,
+html.dark .text-emerald-800,
+html.dark .text-emerald-700 {
+  color: #34d399 !important;
+}
+
+html.dark .text-emerald-600,
+html.dark .text-teal-600 {
+  color: #2dd4bf !important;
+}
+
+html.dark .text-emerald-500 {
+  color: #10b981 !important;
+}
+
+/* Blue & Sky Text -> Luminous Starlight Blue */
+html.dark .text-blue-950,
+html.dark .text-blue-900,
+html.dark .text-blue-800,
+html.dark .text-blue-700,
+html.dark .text-sky-700,
+html.dark .text-sky-800,
+html.dark .text-blue-900\/90 {
+  color: #60a5fa !important;
+}
+
+/* Purple / Indigo Text -> Soft Lavender */
+html.dark .text-indigo-950,
+html.dark .text-indigo-900,
+html.dark .text-indigo-800,
+html.dark .text-indigo-700 {
+  color: #a5b4fc !important;
+}
+
+/* Amber / Gold Text -> Warm Moonlight Gold */
+html.dark .text-amber-900,
+html.dark .text-amber-800,
+html.dark .text-amber-700 {
+  color: #fde047 !important;
+}
+
+/* Rose / Coral Text -> Soft Rose */
+html.dark .text-rose-900,
+html.dark .text-rose-800,
+html.dark .text-rose-700,
+html.dark .text-rose-600,
+html.dark .text-pink-900,
+html.dark .text-pink-800,
+html.dark .text-pink-700 {
+  color: #fda4af !important;
+}
+
+/* =========================================================================
+   PILLS, BADGES & CHIPS (JEWEL TONES)
+   ========================================================================= */
+
+/* Emerald badges & pills */
+html.dark .bg-emerald-50 {
+  background-color: #13272e !important;
+  border-color: #1c454e !important;
+}
+
+html.dark .bg-emerald-100 {
+  background-color: #16363d !important;
+  color: #5eead4 !important;
+  border-color: #1f555e !important;
+}
+
+html.dark .bg-emerald-100\/70,
+html.dark .bg-emerald-100\/50 {
+  background-color: rgba(22, 54, 61, 0.75) !important;
+}
+
+html.dark .bg-emerald-200 {
+  background-color: #1b4952 !important;
+}
+
+/* Sky & Blue badges */
+html.dark .bg-blue-50,
+html.dark .bg-sky-50 {
+  background-color: #15253d !important;
+  border-color: #20395d !important;
+}
+
+html.dark .bg-blue-100,
+html.dark .bg-sky-100 {
+  background-color: #1a3152 !important;
+  color: #93c5fd !important;
+}
+
+/* Amber badges */
+html.dark .bg-amber-50 {
+  background-color: #2b2014 !important;
+  border-color: #45321c !important;
+}
+
+html.dark .bg-amber-100 {
+  background-color: #3d2c18 !important;
+  color: #fde047 !important;
+}
+
+/* Rose badges */
+html.dark .bg-rose-50,
+html.dark .bg-pink-50 {
+  background-color: #2e1724 !important;
+  border-color: #4a2137 !important;
+}
+
+html.dark .bg-rose-100,
+html.dark .bg-pink-100 {
+  background-color: #421c31 !important;
+  color: #fda4af !important;
+}
+
+/* =========================================================================
+   BORDERS
+   ========================================================================= */
+
+html.dark .border-emerald-50,
+html.dark .border-emerald-100,
+html.dark .border-emerald-100\/70,
+html.dark .border-emerald-100\/90 {
+  border-color: #1f3b47 !important;
+}
+
+html.dark .border-emerald-200,
+html.dark .border-emerald-200\/60,
+html.dark .border-emerald-200\/80 {
+  border-color: #284e59 !important;
+}
+
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+  border-color: #25364f !important;
+}
+
+/* =========================================================================
+   FORM INPUTS, TEXTAREAS & SELECTS
+   ========================================================================= */
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #19253b !important;
+  color: #f8fafc !important;
+  border-color: #2c405e !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: #2dd4bf !important;
+  outline: none;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* =========================================================================
+   GRADIENTS (COACH CARD & BANNERS)
+   ========================================================================= */
+
+html.dark .from-blue-50 {
+  --tw-gradient-from: #152238 !important;
+}
+html.dark .via-blue-100 {
+  --tw-gradient-via: #1c2e4a !important;
+}
+html.dark .to-blue-50 {
+  --tw-gradient-to: #131d2e !important;
+}
+
+html.dark .from-slate-50 {
+  --tw-gradient-from: #151f30 !important;
+}
+html.dark .via-slate-100 {
+  --tw-gradient-via: #1b283d !important;
+}
+html.dark .to-slate-50 {
+  --tw-gradient-to: #131b28 !important;
+}
+
+html.dark .from-pink-50 {
+  --tw-gradient-from: #261625 !important;
+}
+html.dark .via-pink-100 {
+  --tw-gradient-via: #361c32 !important;
+}
+html.dark .to-pink-50 {
+  --tw-gradient-to: #20131f !important;
+}
+
+html.dark .from-amber-50 {
+  --tw-gradient-from: #261e14 !important;
+}
+html.dark .via-amber-100 {
+  --tw-gradient-via: #382a19 !important;
+}
+html.dark .to-amber-50 {
+  --tw-gradient-to: #211910 !important;
+}
+
+html.dark .from-emerald-50 {
+  --tw-gradient-from: #12282e !important;
+}
+html.dark .via-teal-50 {
+  --tw-gradient-via: #163238 !important;
+}
+html.dark .to-emerald-100\/50 {
+  --tw-gradient-to: #112529 !important;
+}
+
+/* In dark mode, shaded green banner boxes become solid green */
+html.dark .green-banner-card,
+html.dark .green-banner-card.bg-gradient-to-r {
+  background-image: none !important;
+  background-color: #064e3b !important;
+  border-color: #047857 !important;
+}
+
+/* In dark mode: Routine name and emoji selection card has solid green background */
+html.dark .routine-name-emoji-card {
+  background-color: #064e3b !important;
+  border-color: #059669 !important;
+}
+
+html.dark .routine-name-emoji-card label {
+  color: #a7f3d0 !important;
+}
+
+html.dark .routine-name-emoji-card input,
+html.dark .routine-name-emoji-card select,
+html.dark .routine-name-emoji-card textarea {
+  background-color: #043d2e !important;
+  border-color: #059669 !important;
+  color: #f0fdf4 !important;
+}
+
+html.dark .routine-name-emoji-card input::placeholder,
+html.dark .routine-name-emoji-card textarea::placeholder {
+  color: #6ee7b7 !important;
+  opacity: 0.7;
+}
+
+html.dark .routine-emoji-preview-box {
+  background-color: #043d2e !important;
+  border-color: #10b981 !important;
+}
+
+html.dark .routine-emoji-selector-box {
+  background-color: #04382a !important;
+  border-color: #059669 !important;
+}
+
+html.dark .routine-emoji-selector-box span {
+  color: #a7f3d0 !important;
+}
+
+html.dark .routine-emoji-btn {
+  background-color: #064e3b !important;
+  border-color: #059669 !important;
+  color: #d1fae5 !important;
+}
+
+html.dark .routine-emoji-btn:hover {
+  background-color: #0a634c !important;
+  border-color: #10b981 !important;
+  color: #ffffff !important;
+}
+
+html.dark .routine-emoji-grid {
+  background-color: #04382a !important;
+  border-color: #059669 !important;
+}
+
+html.dark .routine-emoji-grid button:not(.bg-emerald-500) {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+html.dark .routine-emoji-grid button:not(.bg-emerald-500):hover {
+  background-color: #064e3b !important;
+}
+
+html.dark .routine-name-emoji-card .border-t {
+  border-color: #059669 !important;
+}
+
+/* =========================================================================
+   PRIMARY BUTTONS & CONTROLS
+   Ensure white text on emerald buttons remains bright white
+   ========================================================================= */
+
+html.dark .bg-emerald-500,
+html.dark .bg-emerald-600,
+html.dark .bg-teal-500,
+html.dark .bg-teal-600,
+html.dark .bg-gradient-to-r.from-emerald-500,
+html.dark .bg-gradient-to-br.from-emerald-500 {
+  color: #ffffff !important;
+}
+
+html.dark .bg-emerald-500 *,
+html.dark .bg-emerald-600 *,
+html.dark .bg-teal-500 *,
+html.dark .bg-teal-600 * {
+  color: #ffffff;
+}
+
+/* Modals & Dialogs */
+html.dark .fixed.z-50 .bg-white {
+  background-color: #152236 !important;
+  border-color: #2b3e59 !important;
+}
+
+/* Hover effects */
+html.dark .hover\:bg-slate-50:hover,
+html.dark .hover\:bg-slate-100:hover {
+  background-color: #1e2c40 !important;
+}
+
+html.dark .hover\:bg-emerald-50:hover,
+html.dark .hover\:bg-emerald-100:hover {
+  background-color: #18363d !important;
+}
+
+/* =========================================================================
+   ANIMATIONS
+   ========================================================================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================================================
+   CALMWORLD HIGH-LEGIBILITY WHITE SURFACES (MIMMI & MAGI)
+   Guarantees pure white backgrounds with 100% crisp, dark, readable text
+   in both Light and Dark modes. Never white-on-white text!
+   ========================================================================= */
+.calm-white-card,
+html.dark .calm-white-card,
+html.dark div.calm-white-card,
+html.dark span.calm-white-card,
+html.dark button.calm-white-card {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+.calm-white-card *,
+html.dark .calm-white-card *,
+html.dark div.calm-white-card *,
+html.dark span.calm-white-card *,
+html.dark button.calm-white-card * {
+  color: #0f172a !important;
+}
+
+/* Accents within calm white cards remain distinct and readable */
+.calm-white-card .text-amber-700,
+html.dark .calm-white-card .text-amber-700,
+.calm-white-card .text-amber-800,
+html.dark .calm-white-card .text-amber-800,
+.calm-white-card .text-amber-900,
+html.dark .calm-white-card .text-amber-900 {
+  color: #78350f !important;
+}
+
+.calm-white-card .text-sky-700,
+html.dark .calm-white-card .text-sky-700,
+.calm-white-card .text-sky-800,
+html.dark .calm-white-card .text-sky-800,
+.calm-white-card .text-sky-900,
+html.dark .calm-white-card .text-sky-900 {
+  color: #0369a1 !important;
+}
+
+.calm-white-card .text-pink-600,
+html.dark .calm-white-card .text-pink-600,
+.calm-white-card .text-pink-700,
+html.dark .calm-white-card .text-pink-700,
+.calm-white-card .text-pink-800,
+html.dark .calm-white-card .text-pink-800 {
+  color: #be185d !important;
+}
+
+.calm-white-card .text-emerald-700,
+html.dark .calm-white-card .text-emerald-700,
+.calm-white-card .text-emerald-800,
+html.dark .calm-white-card .text-emerald-800,
+.calm-white-card .text-emerald-900,
+html.dark .calm-white-card .text-emerald-900 {
+  color: #065f46 !important;
+}
+
+/* =========================================================================
+   MAGI CLEANING TOOLS: GUARANTEED HIGH CONTRAST & READABILITY IN DARK MODE
+   ========================================================================= */
+.magi-tool-box,
+html.dark .magi-tool-box,
+html.dark div.magi-tool-box {
+  background-color: #ffffff !important;
+  border-color: #7dd3fc !important;
+  color: #0f172a !important;
+}
+
+.magi-tool-box *,
+html.dark .magi-tool-box *,
+html.dark .magi-tool-box span,
+html.dark .magi-tool-box p,
+html.dark .magi-tool-box div {
+  color: #0f172a !important;
+}
+
+.magi-tool-btn,
+html.dark .magi-tool-btn,
+html.dark button.magi-tool-btn {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.magi-tool-btn span,
+html.dark .magi-tool-btn span,
+html.dark button.magi-tool-btn span {
+  color: #0f172a !important;
+}
+
+/* Active Spugna (Warm Golden Glow, Crisp Dark Text) */
+.magi-tool-btn-sponge-active,
+html.dark .magi-tool-btn-sponge-active,
+html.dark button.magi-tool-btn-sponge-active {
+  background-color: #fef3c7 !important;
+  border-color: #f59e0b !important;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.45) !important;
+}
+.magi-tool-btn-sponge-active span,
+html.dark .magi-tool-btn-sponge-active span,
+html.dark button.magi-tool-btn-sponge-active span {
+  color: #78350f !important;
+}
+
+/* Active Shower / Acqua (Fresh Sky Blue Glow, Crisp Dark Text) */
+.magi-tool-btn-shower-active,
+html.dark .magi-tool-btn-shower-active,
+html.dark button.magi-tool-btn-shower-active {
+  background-color: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.45) !important;
+}
+.magi-tool-btn-shower-active span,
+html.dark .magi-tool-btn-shower-active span,
+html.dark button.magi-tool-btn-shower-active span {
+  color: #0369a1 !important;
+}
+
+/* Active Towel / Asciugamano (Soft Rose Glow, Crisp Dark Text) */
+.magi-tool-btn-towel-active,
+html.dark .magi-tool-btn-towel-active,
+html.dark button.magi-tool-btn-towel-active {
+  background-color: #fce7f3 !important;
+  border-color: #ec4899 !important;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.45) !important;
+}
+.magi-tool-btn-towel-active span,
+html.dark .magi-tool-btn-towel-active span,
+html.dark button.magi-tool-btn-towel-active span {
+  color: #9d174d !important;
+}
+
+
